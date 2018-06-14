@@ -4,6 +4,8 @@
 get_header(); ?>
 <!-- wrapper -->
 	<main class="page-main">
+		<!-- section -->
+		<section>
 
 			<h1><?php the_title(); ?></h1>
 
@@ -28,7 +30,8 @@ get_header(); ?>
 			<!-- /article -->
 
 		<?php endif; ?>
-
+	</section>
+	<!-- /section -->
 	</main>
 	<aside>
 		<?php

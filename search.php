@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 <!-- wrapper -->
+<!-- section -->
+<section>
 	<main role="main">
 		<!-- section -->
 		<section>
@@ -19,5 +21,7 @@
 			dynamic_sidebar('sidebar-blog');
 		} ?>
 	</aside>
+</section>
+<!-- /section -->
 	<!-- /wrapper -->
 <?php get_footer(); ?>

@@ -17,7 +17,7 @@ h1 {
   color: #16404C;
   font-family: "Work Sans", sans-serif;
   font-weight: 100;
-  padding: 15px; }
+  padding: 0 15px 15px 15px; }
 
 h2,
 h3,
@@ -292,12 +292,14 @@ footer {
   font-size: 0.75em;
   text-align: center; }
   footer h3 {
-    color: #FAF9F9; }
+    color: #FAF9F9;
+    padding: 30px 0px; }
   footer p {
     color: #FAF9F9;
-    line-height: 1.5em;
+    line-height: 1.6em;
     margin: auto;
-    max-width: 40%; }
+    max-width: 40%;
+    padding: 35px 5px; }
     @media screen and (max-width: 800px) {
       footer p {
         max-width: 60%; } }
@@ -306,23 +308,25 @@ footer {
     text-decoration: underline; }
     footer a:hover {
       color: #16404C; }
-  footer ul#social li {
-    display: inline-block;
-    padding: 30px; }
-    @media screen and (max-width: 425px) {
-      footer ul#social li {
-        padding: 20px 10px; } }
-    footer ul#social li a {
-      text-decoration: none; }
-      footer ul#social li a:hover {
+  footer ul#social {
+    padding-top: 30px; }
+    footer ul#social li {
+      display: inline-block;
+      padding: 30px; }
+      @media screen and (max-width: 425px) {
+        footer ul#social li {
+          padding: 20px 10px; } }
+      footer ul#social li a {
         text-decoration: none; }
-      footer ul#social li a i {
-        font-size: 3em;
-        color: #FAF9F9; }
-        footer ul#social li a i:hover {
-          color: #16404C;
-          cursor: pointer;
+        footer ul#social li a:hover {
           text-decoration: none; }
+        footer ul#social li a i {
+          font-size: 3em;
+          color: #FAF9F9; }
+          footer ul#social li a i:hover {
+            color: #16404C;
+            cursor: pointer;
+            text-decoration: none; }
 
 .embed-container {
   position: relative;

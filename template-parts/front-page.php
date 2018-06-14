@@ -3,7 +3,8 @@
 
 get_header(); ?>
 		<!-- wrapper -->
-
+		<!-- section -->
+		<section>
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
 			<!-- article -->
@@ -27,6 +28,7 @@ get_header(); ?>
 			<!-- /article -->
 
 		<?php endif; ?>
-
+	</section>
+	<!-- /section -->
 		<!-- /wrapper -->
 <?php get_footer(); ?>

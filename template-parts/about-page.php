@@ -3,6 +3,8 @@
 
 get_header(); ?>
 <!-- wrapper -->
+<!-- section -->
+<section>
 	<main class="page-main">
 
 			<h1><?php the_title(); ?></h1>
@@ -36,6 +38,8 @@ get_header(); ?>
 			dynamic_sidebar('sidebar-about');
 		} ?>
 	</aside>
+</section>
+<!-- /section -->
 	<!-- /wrapper -->
 
 <?php get_footer(); ?>
