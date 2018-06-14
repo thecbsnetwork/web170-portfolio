@@ -1,0 +1,329 @@
+@import "colors"
+@import "mixins"
+
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+html
+    background-color: $litegray
+    font-size: 100%
+    font-family: $bodyfont
+
+h1,
+    color: $darkblue
+    font-family: $headfont
+    font-weight: 100
+    padding: 15px
+
+h2,
+h3,
+h4,
+h5,
+h6
+    color: $darkblue
+    font-family: $bodyfont
+    font-weight: 400
+
+header
+    width: 78%
+    max-width: 1100px
+    margin: 50px auto
+    @include breakpoint(laptop)
+        width: 88%
+
+#logo
+    float: left
+    width: 260px
+    padding-top: 0px
+    padding-bottom: 25px
+    @include breakpoint(tablet)
+        display: none
+
+nav#primary
+    float: right
+    width: 50%
+    height: 60px
+    line-height: 60px
+    padding-top: 12px
+    ul
+        &.sub-menu
+            display: none
+        li
+            list-style-type: none
+            float: left
+            width: 25%
+            position: relative
+            text-align: center
+            a
+                text-decoration: none
+                color: $darkblue
+                &:hover
+                    background-color: $darkblue
+                    border-radius: 2.8px
+                    color: $litegray
+                    padding: .4em
+
+div.mob-menu-logo-holder
+    background-color: $litegray
+
+#wrapper
+    width: 78%
+    max-width: 1100px
+    margin: 20px auto 30px auto
+    clear: both
+    padding-top: 50px
+    a:hover
+        text-decoration: underline
+    @include breakpoint(tablet)
+        width: 92%
+//home-only
+body.page-id-51
+    #wrapper
+        padding-top: 50px
+        padding-bottom: 30px
+        h2
+            padding-top: 20px
+        @include breakpoint(laptop)
+            width: 88%
+        @include breakpoint(tablet)
+            width: 92%
+//home-only
+#banner
+    margin-bottom: 20px
+
+img
+    display: block
+    max-width: 100%
+    height: auto
+    &.wp-image-88
+        float: left
+        padding-right: 2%
+    //features-only
+    margin: auto
+    padding-top: 20px
+
+p
+    line-height: 1.5em
+    padding: 15px
+
+a
+    color: $darkblue
+
+.submit
+    background-color: $darkblue
+    color: $white
+    padding: 10px
+//home-only
+blockquote
+    margin: 20px 10% 30px 10%
+    font-size: 1.2em
+    font-style: italic
+    line-height: 1.3em
+    padding: 30px
+    @include breakpoint(mobile-down)
+        margin: 20px 1% 30px 1%
+        padding: 5px
+//about-only
+body.page-id-81 blockquote
+    border-left: 10px solid #ccc
+    padding-left: 20px
+
+i.fas,
+i.fab
+    display: inline
+    color: #16404C
+    font-size: 2em
+
+div.container
+    overflow: hidden
+    padding-bottom: 50px
+    div.box-left
+        float: left
+        width: 48.93%
+        p
+            font-size: .875em
+            line-height: 1.35em
+        img
+            width: 100%
+            height: auto
+            margin-bottom: 15px
+            border-radius: 50%
+        @include breakpoint(laptop)
+            float: none
+            width: auto
+            padding: 0px 15px 15px 15px
+    div.box-right
+        float: right
+        width: 48.93%
+        p
+            font-size: .875em
+            line-height: 1.35em
+        img
+            width: 100%
+            height: auto
+            margin-bottom: 15px
+            border-radius: 50%
+        @include breakpoint(laptop)
+            float: none
+            width: auto
+            padding: 0px 15px 15px 15px
+    .box1
+        width: 45%
+        float: left
+        @include breakpoint(tablet)
+            float: none
+            width: auto
+    .box2
+        width: 45%
+        float: right
+        @include breakpoint(tablet)
+            float: none
+            width: auto
+    .box3
+        width: 45%
+        float: left
+        @include breakpoint(tablet)
+            float: none
+            width: auto
+    .box4
+        width: 45%
+        float: right
+        @include breakpoint(tablet)
+            float: none
+            width: auto
+
+main
+    float: left
+    width: 63%
+    padding-bottom: 30px
+    h1
+        padding: 0 15px 15px 15px
+    h2,
+    h3,
+    h4,
+    h5,
+    h6
+        padding: 15px
+    a
+        text-decoration: none
+        &:hover
+            text-decoration: underline
+    @include breakpoint(laptop)
+        float: none
+        width: auto
+        padding: 0px 15px 15px 15px
+
+//archive and category adjustment
+body.archive, body.category
+    main
+        section
+            h1
+                padding-top: 50px
+
+aside
+    width: 34%
+    float: right
+    overflow: hidden
+    padding: 0px 15px 10px 15px
+    margin-bottom: 20px
+    border: 1px solid $darkblue
+    div
+        padding: 20px 0px
+        ul
+            padding-left: 20px
+            li
+                padding: 5px 0px
+    div#nav_menu-2
+        ul#menu-sidebar
+            padding: 20px 0 0 20px
+            li.sidebar-menu
+                width: 65%
+                height: 30px
+                list-style-type: none
+                &:before
+                    font-family: 'Font Awesome 5 Free'
+                    content: '\f00c'
+                    font-style: normal
+                    font-weight: 900
+                    margin-right: 5px
+                    color: $darkblue
+                a
+                    text-decoration: none
+                    color: $darkblue
+                    &:hover
+                        text-decoration: underline
+    ul
+        padding-left: 20px
+        li
+            list-style-type: none
+            list-style-position: inside
+            padding-left: 15px
+            a
+                text-decoration: none
+    figure
+        padding-left: 15px
+    @include breakpoint(laptop)
+        float: none
+        width: auto
+        padding: 0px 15px 15px 15px
+
+hr
+    margin: 2% auto
+
+span.date, span.author
+    font-family: $headfont
+    font-weight: 200
+    color: $darkgray
+
+footer
+    background-color: $darkgray
+    overflow: hidden
+    clear: both
+    font-size: .75em
+    text-align: center
+    h3
+        color: $litegray
+    p
+        color: $litegray
+        line-height: 1.5em
+        margin: auto
+        max-width: 40%
+        @include breakpoint(tablet)
+            max-width: 60%
+    a
+        color: $litegray
+        text-decoration: underline
+        &:hover
+            color: $darkblue
+    ul#social
+        li
+            display: inline-block
+            padding: 30px
+            @include breakpoint(mobile-down)
+                padding: 20px 10px
+            a
+                text-decoration: none
+                &:hover
+                    text-decoration: none
+                i
+                    font-size: 3em
+                    color: $litegray
+                    &:hover
+                        color: $darkblue
+                        cursor: pointer
+                        text-decoration: none
+
+.embed-container
+    position: relative
+    padding-bottom: 56.25%
+    height: 0
+    overflow: hidden
+    max-width: 100%
+    iframe, object, embed
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%

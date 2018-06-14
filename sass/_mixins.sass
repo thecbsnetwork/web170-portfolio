@@ -1,0 +1,16 @@
+@mixin breakpoint($size)
+    @if $size == laptop
+        @media screen and (max-width: 1024px)
+            @content
+
+    @else if $size == tablet
+        @media screen and (max-width: 800px)
+            @content
+
+    @else if $size == mobile
+        @media screen and (max-width: 700px)
+            @content
+
+    @else if $size == mobile-down
+        @media screen and (max-width: 425px)
+            @content
