@@ -18,7 +18,7 @@
 		<!-- /post title -->
 
 		<!-- post details -->
-		<span class="date"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span>&mdash;<span class="author"><?php _e( 'Published by', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span>
+		<span class="date"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span><br /><span class="author"><?php _e( 'Published by', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span>
 		<!-- /post details -->
 
 		<?php html5wp_excerpt('excerpt_length', 'excerpt_more' ); // Build your custom callback length in functions.php ?>

@@ -102,14 +102,16 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  margin: auto;
-  padding-top: 20px; }
-  img.wp-image-88 {
+  margin: auto; }
+  img.wp-image-250 {
     float: left;
     padding-right: 2%; }
+  img.wp-image-262 {
+    float: right;
+    padding-left: 2%; }
 
 p {
-  line-height: 1.5em;
+  line-height: 1.8em;
   padding: 15px; }
 
 a {
@@ -144,38 +146,6 @@ i.fab {
 div.container {
   overflow: hidden;
   padding-bottom: 50px; }
-  div.container div.box-left {
-    float: left;
-    width: 48.93%; }
-    div.container div.box-left p {
-      font-size: 0.875em;
-      line-height: 1.35em; }
-    div.container div.box-left img {
-      width: 100%;
-      height: auto;
-      margin-bottom: 15px;
-      border-radius: 50%; }
-    @media screen and (max-width: 1024px) {
-      div.container div.box-left {
-        float: none;
-        width: auto;
-        padding: 0px 15px 15px 15px; } }
-  div.container div.box-right {
-    float: right;
-    width: 48.93%; }
-    div.container div.box-right p {
-      font-size: 0.875em;
-      line-height: 1.35em; }
-    div.container div.box-right img {
-      width: 100%;
-      height: auto;
-      margin-bottom: 15px;
-      border-radius: 50%; }
-    @media screen and (max-width: 1024px) {
-      div.container div.box-right {
-        float: none;
-        width: auto;
-        padding: 0px 15px 15px 15px; } }
   div.container .box1 {
     width: 45%;
     float: left; }
@@ -204,6 +174,38 @@ div.container {
       div.container .box4 {
         float: none;
         width: auto; } }
+  div.container div.box-left {
+    float: left;
+    width: 48.93%; }
+    div.container div.box-left p {
+      font-size: 0.875em;
+      line-height: 1.85em; }
+    div.container div.box-left img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+      border-radius: 15px; }
+    @media screen and (max-width: 1024px) {
+      div.container div.box-left {
+        float: none;
+        width: auto;
+        padding: 15px 15px 15px 15px; } }
+  div.container div.box-right {
+    float: right;
+    width: 48.93%; }
+    div.container div.box-right p {
+      font-size: 0.875em;
+      line-height: 1.85em; }
+    div.container div.box-right img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+      border-radius: 15px; }
+    @media screen and (max-width: 1024px) {
+      div.container div.box-right {
+        float: none;
+        width: auto;
+        padding: 15px 15px 15px 15px; } }
 
 main {
   float: left;
@@ -216,7 +218,7 @@ main {
   main h4,
   main h5,
   main h6 {
-    padding: 15px; }
+    padding: 40px 0px; }
   main a {
     text-decoration: none; }
     main a:hover {
@@ -226,6 +228,15 @@ main {
       float: none;
       width: auto;
       padding: 0px 15px 15px 15px; } }
+  main article.post h1 {
+    font-weight: 700;
+    padding-left: 0px; }
+  main article.post ol {
+    padding-left: 2em;
+    line-height: 1.8em;
+    max-width: 35em; }
+    main article.post ol li {
+      padding: 10px 0px; }
 
 body.archive main section h1, body.category main section h1 {
   padding-top: 50px; }
@@ -246,7 +257,7 @@ aside {
   aside div#nav_menu-2 ul#menu-sidebar {
     padding: 20px 0 0 20px; }
     aside div#nav_menu-2 ul#menu-sidebar li.sidebar-menu {
-      width: 65%;
+      width: 75%;
       height: 30px;
       list-style-type: none; }
       aside div#nav_menu-2 ul#menu-sidebar li.sidebar-menu:before {
@@ -283,7 +294,17 @@ hr {
 span.date, span.author {
   font-family: "Work Sans", sans-serif;
   font-weight: 200;
-  color: #5C5F64; }
+  color: #5C5F64;
+  padding-left: 40px; }
+
+p.comment-form-comment label,
+p.comment-form-author label,
+p.comment-form-email label,
+p.comment-form-url label {
+  padding-right: 2em; }
+
+p.comment-form-cookies-consent label {
+  padding-left: 2em; }
 
 footer {
   background-color: #5C5F64;

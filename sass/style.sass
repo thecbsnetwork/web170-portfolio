@@ -65,6 +65,7 @@ nav#primary
                     color: $litegray
                     padding: .4em
 
+//mobile menu adjustment
 div.mob-menu-logo-holder
     background-color: $litegray
 
@@ -97,15 +98,16 @@ img
     display: block
     max-width: 100%
     height: auto
-    &.wp-image-88
+    margin: auto
+    &.wp-image-250
         float: left
         padding-right: 2%
-    //features-only
-    margin: auto
-    padding-top: 20px
+    &.wp-image-262
+        float: right
+        padding-left: 2%
 
 p
-    line-height: 1.5em
+    line-height: 1.8em
     padding: 15px
 
 a
@@ -136,39 +138,10 @@ i.fab
     color: #16404C
     font-size: 2em
 
+//features-only
 div.container
     overflow: hidden
     padding-bottom: 50px
-    div.box-left
-        float: left
-        width: 48.93%
-        p
-            font-size: .875em
-            line-height: 1.35em
-        img
-            width: 100%
-            height: auto
-            margin-bottom: 15px
-            border-radius: 50%
-        @include breakpoint(laptop)
-            float: none
-            width: auto
-            padding: 0px 15px 15px 15px
-    div.box-right
-        float: right
-        width: 48.93%
-        p
-            font-size: .875em
-            line-height: 1.35em
-        img
-            width: 100%
-            height: auto
-            margin-bottom: 15px
-            border-radius: 50%
-        @include breakpoint(laptop)
-            float: none
-            width: auto
-            padding: 0px 15px 15px 15px
     .box1
         width: 45%
         float: left
@@ -193,6 +166,36 @@ div.container
         @include breakpoint(tablet)
             float: none
             width: auto
+    div.box-left
+        float: left
+        width: 48.93%
+        p
+            font-size: .875em
+            line-height: 1.85em
+        img
+            width: 100%
+            height: auto
+            margin-bottom: 15px
+            border-radius: 15px
+        @include breakpoint(laptop)
+            float: none
+            width: auto
+            padding: 15px 15px 15px 15px
+    div.box-right
+        float: right
+        width: 48.93%
+        p
+            font-size: .875em
+            line-height: 1.85em
+        img
+            width: 100%
+            height: auto
+            margin-bottom: 15px
+            border-radius: 15px
+        @include breakpoint(laptop)
+            float: none
+            width: auto
+            padding: 15px 15px 15px 15px
 
 main
     float: left
@@ -205,7 +208,7 @@ main
     h4,
     h5,
     h6
-        padding: 15px
+        padding: 40px 0px
     a
         text-decoration: none
         &:hover
@@ -214,6 +217,16 @@ main
         float: none
         width: auto
         padding: 0px 15px 15px 15px
+    article.post
+        h1
+            font-weight: 700
+            padding-left: 0px
+        ol
+            padding-left: 2em
+            line-height: 1.8em
+            max-width: 35em
+            li
+                padding: 10px 0px
 
 //archive and category adjustment
 body.archive, body.category
@@ -239,7 +252,7 @@ aside
         ul#menu-sidebar
             padding: 20px 0 0 20px
             li.sidebar-menu
-                width: 65%
+                width: 75%
                 height: 30px
                 list-style-type: none
                 &:before
@@ -276,6 +289,18 @@ span.date, span.author
     font-family: $headfont
     font-weight: 200
     color: $darkgray
+    padding-left: 40px
+
+//comment adjustments
+p.comment-form-comment,
+p.comment-form-author,
+p.comment-form-email,
+p.comment-form-url
+    label
+        padding-right: 2em
+p.comment-form-cookies-consent
+    label
+        padding-left: 2em
 
 footer
     background-color: $darkgray
